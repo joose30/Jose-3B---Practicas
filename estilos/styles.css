@@ -1,0 +1,78 @@
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+    background-color: #f2f2f2;
+    color: #2c2b2b;
+}
+
+header {
+    background-color: #4399dfad;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(34, 31, 31, 0.1);
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+nav a {
+    color: #5f1f1f;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.image-section {
+    flex: 1;
+    text-align: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    border-radius: 40px;
+}
+
+.texto {
+    flex: 1;
+    background-color: #5f84ac;
+    padding: 20px;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+
+.practicas {
+    flex: 1;
+    background-color: #5f84ac;
+    padding: 20px;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+
+.text-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.text-section h2 {
+    font-size: 1.5em;
+    color: #dfd6d6;
+    margin-bottom: 20px;
+}
+
+  
+
+
+
