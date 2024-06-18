@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="tittle">Practica validacion</h1>
+        <h2 class="subtitle">Registro de usuario</h2>
+
+        <form action="" method="get">
+            
+        <label for="usuario">Nombre de usuario</label>
+        <input type="text" id="usuario" name="usuario" class="input" 
+        placeholder="Nombre de usuario" required
+        maxlength="15" minlength="5"
+        pattern="^[a-zA-Z0-9]{5,15}$"
+        title="Debe tener entre 5 y 15 caracteres alfanuméricos.">
+        
+        <label for="pass">Contraseña</label>
+        <input type="password" id="pass" name="pass" class="input" 
+        placeholder="Contraseña" required minlength="8" maxlength="20"
+        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
+        title="Debe tener al menos 8 caracteres, incluyendo al menos una letra mayúscula, una minúscula, un número y un carácter especial (!, @, #, etc.).">
+        
+        <label for="pass2">Confirmar Contraseña</label>
+        <input type="password" id="pass2" name="pass2" class="input"
+        placeholder="Confirmar Contraseña" required minlength="8" maxlength="20"
+        title="Debe coincidir con la contraseña anterior.">
+        
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" class="input"
+        placeholder="Correo Electrónico" required maxlength="50"
+        title="Debe ser una dirección de correo electrónico válida.">
+        
+        <label for="telefono">Número de Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" class="input"
+        placeholder="+1234567890" required maxlength="15"
+        pattern="^\+\d{1,15}$"
+        title="Debe seguir el formato internacional, comenzando con el signo + y hasta 15 dígitos.">
+        
+        <label for="nacimiento">Fecha de Nacimiento</label>
+        <input type="date" id="nacimiento" name="nacimiento" class="input"
+        placeholder="YYYY-MM-DD" required
+        title="Debe estar en el formato YYYY-MM-DD.">
+        
+        <label for="codigo">Código Postal</label>
+        <input type="text" id="codigo" name="codigo" class="input"
+        placeholder="Código Postal" required maxlength="5"
+        pattern="^\d{5}$"
+        title="Debe consistir en exactamente 5 dígitos.">
+
+            
+            <input type="submit" class="button" onclick="validaPass()">
+        </form>
+        <script src="./main.js"></script>
+    </div>
+
+</body>
+</html>
